@@ -1,0 +1,16 @@
+/* logopedia */
+.card .ico.e{font-family:var(--f-emoji); font-size:40px}
+.parent{margin:0 0 6px; padding:12px 14px; border-radius:16px; background:#FFF6D6; color:var(--ink); font-size:15px; font-weight:600}
+.center{display:block; margin:0 auto}
+.dots{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:10px 0 18px}
+.dots i{width:22px; height:22px; border-radius:50%; background:#fff; border:3px solid var(--stone-dark)}
+.dots i.on{background:var(--good); border-color:var(--good)}
+.snds{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:6px}
+.snds .lvl{font-size:30px; padding:18px 0}
+.syls{display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin:6px 0 10px}
+.syl{min-width:72px; height:52px; padding:0 14px; border-radius:14px; background:var(--card); font-family:var(--f-display); font-weight:800; font-size:26px; box-shadow:0 4px 0 rgba(27,58,75,.14)}
+.syl:active{transform:translateY(3px); box-shadow:0 1px 0 rgba(27,58,75,.14)}
+.ans.pw{display:flex; flex-direction:column; align-items:center; gap:2px; padding:12px 4px; min-width:0}
+.pw .pe{font-family:var(--f-emoji); font-size:clamp(44px,13vw,64px); line-height:1.1}
+.pw .pt{font-family:var(--f-display); font-size:clamp(14px,4vw,20px); font-weight:800}
+.sound-big{font-family:var(--f-display); font-weight:800; font-size:clamp(56px,18vw,96px); text-align:center; line-height:1; color:var(--accent); margin:6px 0 14px}

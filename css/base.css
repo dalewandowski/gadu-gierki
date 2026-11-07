@@ -1,0 +1,23 @@
+/* Layout: jedna kolumna, menu z grupami kart (Liczenie, Literki), gry w pełnej szerokości. Jasny, stały wygląd (gra dla dzieci). */
+:root{
+  --bg:#DFF3FF; --ink:#1B3A4B; --ink-soft:#4F6F82; --card:#FFFFFF;
+  --accent:#FF7A3D; --good:#2DB86B; --bad:#E5484D; --sun:#FFC83D;
+  --pond:#4CC3D9; --pond-deep:#2FA3C0; --grass:#8BD66B; --grass-dark:#62B44A;
+  --stone:#CFC8BA; --stone-dark:#A39C8E;
+  --f-display:'Baloo 2','Trebuchet MS',system-ui,sans-serif;
+  --f-body:'Nunito','Trebuchet MS',system-ui,sans-serif;
+  --f-emoji:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--f-body); font-size:16px; font-weight:700;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+  padding-block:16px;
+}
+#app{max-width:720px; margin:0 auto}
+button{font:inherit; color:inherit; cursor:pointer; border:0; background:none}
+button:focus-visible{outline:4px solid var(--sun); outline-offset:2px}
+h1,h2{font-family:var(--f-display); margin:0; line-height:1.05; text-wrap:balance}

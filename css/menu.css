@@ -1,0 +1,22 @@
+/* menu */
+.title{font-size:clamp(40px,10vw,64px); font-weight:800; color:var(--ink)}
+.title span{color:var(--accent)}
+.lead{color:var(--ink-soft); margin:6px 0 10px; font-size:18px}
+.group{font-family:var(--f-display); font-size:26px; font-weight:800; margin:24px 0 10px}
+.label{font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:8px}
+.seg{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px}
+.seg button{flex:1 1 120px; padding:12px 14px; border-radius:16px; background:var(--card); border:3px solid transparent; font-family:var(--f-display); font-size:20px; font-weight:700}
+.seg button[aria-pressed="true"]{border-color:var(--accent); background:#FFF0E6}
+.cards{display:grid; gap:14px; grid-template-columns:1fr}
+@media(min-width:560px){.cards{grid-template-columns:1fr 1fr}}
+.card{display:flex; gap:14px; align-items:center; text-align:left; background:var(--card); border-radius:24px; padding:16px; min-width:0; box-shadow:0 5px 0 rgba(27,58,75,.12); transition:transform .12s}
+.card:hover{transform:translateY(-2px)}
+.card:active{transform:translateY(3px); box-shadow:0 2px 0 rgba(27,58,75,.12)}
+.card h2{font-size:26px}
+.card p{margin:4px 0 0; color:var(--ink-soft); font-size:15px}
+.card .ico{flex:none; width:72px; height:72px; border-radius:20px; display:grid; place-items:center; background:var(--pond); font-family:var(--f-display); font-size:42px; font-weight:800; color:#fff}
+.card .ico.l{background:var(--accent)}
+.card .ico.s{font-size:30px}
+.card.soon{opacity:.6; cursor:default; box-shadow:none}
+.card.soon:hover{transform:none}
+.card.soon .ico{background:var(--stone-dark)}
